@@ -279,4 +279,68 @@ body {
 .slide_active {
   background-color: transparent;
 }
+
+/********************************************************************/
+.services {
+  padding: 80px 30px;
+}
+
+.services_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services_list_item {
+  max-width: 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #555555;
+}
+
+.services_list_item_ico {
+  color: inherit;
+  margin-bottom: 30px;
+  fill: inherit;
+}
+
+.services_list_item_title {
+  font-family: Raleway;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: inherit;
+  margin-bottom: 20px;
+}
+
+.services_list_item_text {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #8c8c8c;
+  margin-bottom: 30px;
+}
+
+.services_list_item_line {
+  width: 70px;
+  border: 3px solid;
+  border-color: inherit;
+}
+
+.services_active {
+  color: #c7b299;
+  fill: #c7b299;
+}
 /*# sourceMappingURL=style.css.map */
