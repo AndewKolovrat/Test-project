@@ -18,22 +18,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 /********************************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }
-.container{
+.container {
     max-width: 1920px;
     margin: 0 auto;
 }
-.content_container{
+.content_container {
     max-width: 1230px;
     padding: 0 30px;
     margin: 0 auto;
 }
 /********************************************************************/
-.header{
+.header {
     min-height: 100vh; 
-    //1024px
     padding: 40px 30px 40px;
     background-image: url(../img/bg_photo.jpg);
 
@@ -41,16 +40,16 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    &_wrap{
+    &_wrap {
         display: flex;
         align-items: center;
     }
-    &_top{
+    &_top {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        &_title{
+        &_title {
             font-family: 'Raleway', sans-serif;
             margin-left: 2px;
             font-size: 34px;
@@ -60,66 +59,71 @@ body{
             color: #ffffff;
         }
         &_nav{
-            &_link{
-                font-family: 'Montserrat';
-                font-size: 14px;
-                line-height: 1.2;
-                font-weight: 300;
-                color: #ffffff;
-                margin-right: 30px;
-            }
-            &_link:last-child{
-                margin-right: 0;
-            }
-            &_link:hover{
-                text-decoration: underline;
+            &_list {
+                display: flex;
+                &_item {
+                    margin-right: 30px;
+                    &_link {
+                        font-family: 'Montserrat';
+                        font-size: 14px;
+                        line-height: 1.2;
+                        font-weight: 300;
+                        color: #ffffff;
+                    }
+                    &_link:hover {
+                        text-decoration: underline;
+                    }
+                }
+                &_item:last-child {
+                    margin-right: 0;
+                }
             }
         }
-        &_cs_cart{
+        &_cs_cart {
             margin-right: 30px;
         }
     }
-    &_slider{
+    &_slider {
         width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        &_arrow{
+        &_arrow {
             width: 40px;
             height: 75px;
             background-color: transparent;
             background-image: url(../img/icons/arrow.svg);
             opacity: .5;
         }
-        &_arrow:hover{
+        &_arrow:hover {
             transition: .8s;
             opacity: 1;
         }
-        &_slogan{
+        &_slogan {
             max-width: 600px;
             font-family: Raleway;
             line-height: 1.2;
             color: #ffffff;
             text-align: center;
-            &_title{
+            &_title {
                 font-family: Raleway;
                 font-size: 36px;
                 font-weight: 500;
                 margin-bottom: 15px;
             }
-            &_header{
+            &_header {
                 font-size: 52px;
                 font-weight: 800;
                 margin-bottom: 20px;
             }
-            &_text{
+            &_text {
                 font-family: Montserrat;
                 font-size: 16px;
                 line-height: 24px;
                 font-weight: 300;
                 margin-bottom: 50px;
             }
-            &_button{
+            &_button {
                 width: 170px;
                 height: 53px;
                 background-color: #998675;
@@ -132,7 +136,7 @@ body{
                 color: #fff;
                 
             }
-            &_button:hover{
+            &_button:hover {
                 transition: 0.7s;
                 border: 1px solid #fff;
             }
@@ -142,8 +146,8 @@ body{
             }
         }
     }
-    &_slides{
-        &_slide{
+    &_slides {
+        &_slide {
             width: 15px;
             height: 15px;
             margin-right: 10px;
@@ -152,43 +156,43 @@ body{
             border:  2px solid #fff;
             border-radius: 50%;
         }
-        &_slide:last-child{
+        &_slide:last-child {
             margin-right: 0;
         }
-        &_slide:hover{
+        &_slide:hover {
             transition: .7s;
             opacity: 1;
         }
     }
 }
-.arrow-right{
+.arrow-right {
     transform: rotate(180deg);
 }
-.link_active{
+.link_active {
     color: #c7b299;
 }
-.slide_active{
+.slide_active {
     background-color: transparent;
 }
 /********************************************************************/
-.services{
+.services {
     padding: 80px 30px;
-    &_list{
+    &_list {
         display: flex;
         justify-content: space-between;
         margin-bottom: 80px;
-        &_item{
+        &_item {
             max-width: 23%;
             display: flex;
             flex-direction: column;
             align-items: center;
             color: #555555;
-            &_ico{
+            &_ico {
                 color: inherit;
                 margin-bottom: 30px;
                 fill: inherit;
             }
-            &_title{
+            &_title {
                 font-family: Raleway;
                 font-size: 22px;
                 line-height: 1.2;
@@ -196,7 +200,7 @@ body{
                 color: inherit;
                 margin-bottom: 20px;
             }
-            &_text{
+            &_text {
                 font-family: Montserrat;
                 font-size: 14px;
                 line-height: 24px;
@@ -204,24 +208,25 @@ body{
                 color: #8c8c8c;
                 margin-bottom: 30px;
             }
-            &_line{
-                width: 70px;
-                border: 3px solid;
-                border-color: inherit;
-            }
+        }
+        &_item::after {
+            content:"";
+            width: 70px;
+            border: 3px solid;
+            border-color: inherit;
+        }
+        &_item:hover {
+            color: #c7b299;
+            fill: #c7b299;
         }
     }
-    &_content{
+    &_content {
         background-color: #fbfaf8;
         min-height: 700px;
     }
-    &_bottom{
+    &_bottom {
         min-height: 150px;
         background-color: #f4f5f8;
         background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
     }
-}
-.services_active{
-    color: #c7b299;
-    fill: #c7b299;
 }
