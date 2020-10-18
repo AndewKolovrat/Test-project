@@ -399,6 +399,7 @@ body {
         &_item {
             max-width: 370px;
             position: relative;
+            background-color: #fbfaf8;
             &_wrapper {
                 position: relative;
                 background-color: inherit;
@@ -407,7 +408,7 @@ body {
             &_wrapper::before {
                 content: "";
                 border: 15px solid transparent;	
-                border-bottom: 15px solid initial;
+                border-bottom: 15px solid #fbfaf8;
                 position: absolute;
                 top: -30px;
                 left: 10px;
@@ -435,7 +436,13 @@ body {
         }
         &_item:hover{
             background-color: #362f2d;
-        } 
+        }
+        &_item:hover &_item_wrapper:before {
+            border-bottom: 15px solid #362f2d;
+        }  
+        &_item:hover &_item_img {
+            filter: brightness(30%);
+        }
     }
     &_bottom_button {
         width: 170px;

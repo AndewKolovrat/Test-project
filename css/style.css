@@ -582,6 +582,7 @@ body {
 .projects_list_item {
   max-width: 370px;
   position: relative;
+  background-color: #fbfaf8;
   margin-bottom: 30px;
 }
 
@@ -594,7 +595,7 @@ body {
 .projects_list_item_wrapper::before {
   content: "";
   border: 15px solid transparent;
-  border-bottom: 15px solid initial;
+  border-bottom: 15px solid #fbfaf8;
   position: absolute;
   top: -30px;
   left: 10px;
@@ -624,6 +625,15 @@ body {
 
 .projects_list_item:hover {
   background-color: #362f2d;
+}
+
+.projects_list_item:hover .projects_list_item_wrapper:before {
+  border-bottom: 15px solid #362f2d;
+}
+
+.projects_list_item:hover .projects_list_item_img {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
 }
 
 .projects_bottom_button {
