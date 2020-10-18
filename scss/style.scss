@@ -28,6 +28,7 @@ body {
 .content_container {
     max-width: 1230px;
     padding: 0 30px;
+    margin: 0 auto;
 }
 /********************************************************************/
 .header {
@@ -69,8 +70,11 @@ body {
                         font-weight: 300;
                         color: #ffffff;
                     }
-                    &_link:hover {
-                        text-decoration: underline;
+                    &_link:hover, &_link:focus {
+                        color: #c7b299;
+                    }
+                    &_link:active {
+                        opacity: 0.7;
                     }
                 }
                 &_item:last-child {
@@ -78,8 +82,32 @@ body {
                 }
             }
         }
-        &_cs_cart {
-            margin-right: 30px;
+        &_cs {
+            &_searche {
+                width: 25px;
+                height: 25px;
+                background-image: url('../img/icons/search.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                background-color: transparent;
+                color: white;
+            }
+            &_searche:focus {
+                width: 200px;
+                transition: width 1s ease-out;
+                background-position: right;
+              }
+            &_cart {
+                display: inline-block;
+                vertical-align: middle;
+                width: 25px;
+                height: 25px;
+                background-image: url('../img/icons/cart.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-right: 30px;
+            }
         }
     }
     &_slider {
@@ -269,8 +297,10 @@ body {
         background-color: #f4f5f8;
         background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
         padding-top: 50px;
-        display: flex;
-        justify-content: space-between;        
+        &_container {
+            display: flex;
+            justify-content: space-between;
+        }    
         &_title {
             font-family: Raleway;
             font-size: 28px;
@@ -280,7 +310,7 @@ body {
             &_waxom {
                 color: #c7b299;
             }
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         &_text {
             font-family: Montserrat;
@@ -289,5 +319,142 @@ body {
             font-weight: 300;
             color: #615855;
         }
+        &_btn {
+            width: 170px;
+            height: 50px;
+            background-color: #998675;
+            border-radius: 3px;
+            font-family: Raleway;
+            font-size: 14px;
+            line-height: 23px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #ffffff;
+            align-self: center;
+        }
+        &_btn:hover {
+            transition: 0.7s;
+            border: 1px solid #fff;
+        }
+        &_btn:active{
+            transition: 0.7s;
+            background-color: #fff;
+        }
+    }
+}
+/********************************************************************/
+.projects {
+    text-align: center;
+    &_title {
+        font-family: Raleway;
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 600;
+        color: #555555;
+        margin-bottom: 25px;
+    }
+    &_text {
+        max-width: 760px;
+        font-family: Montserrat;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 300;
+        color: #8c8c8c;
+        margin: 0 auto 40px;
+    }
+    &_btn_list {
+        display: flex;
+        justify-content: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 300;
+        color: #8c8c8c;    
+        &_item {
+            margin-right: 10px;
+            &_button {
+                width: 120px;
+                height: 32px;
+                border: 1px solid #ebebeb;
+                border-radius: 3px;
+            }
+            &_button:focus, &_button:hover {
+                background-color: #998675;
+                color: #ffffff;
+            }
+            &_button:active {
+                border-color: red;
+            }
+        }
+        &_item:last-child {
+            margin-right: 0;
+        }
+        margin: 0 auto 50px;
+    }
+    &_list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        &_item {
+            max-width: 370px;
+            position: relative;
+            &_wrapper {
+                position: relative;
+                background-color: inherit;
+                padding: 30px;
+            }
+            &_wrapper::before {
+                content: "";
+                border: 15px solid transparent;	
+                border-bottom: 15px solid initial;
+                position: absolute;
+                top: -30px;
+                left: 10px;
+            }
+            &_img {
+                width: 100%;
+                background-color: #8c8c8c;
+            }
+            &_title {
+                font-family: Raleway;
+                font-size: 20px;
+                line-height: 1.2;
+                font-weight: 500;
+                color: #c7b299;
+                margin-bottom: 15px;
+            }
+            &_text {
+                font-family: Montserrat;
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 300;
+                color: #d1d1d1;
+            }
+            margin-bottom: 30px;
+        }
+        &_item:hover{
+            background-color: #362f2d;
+        } 
+    }
+    &_bottom_button {
+        width: 170px;
+        height: 50px;
+        background-color: #998675;
+        border-radius: 3px;
+        font-family: Raleway;
+        font-size: 14px;
+        line-height: 23px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 80px;
+    }
+    &_bottom_button:hover, &_bottom_button:focus {
+        transition: 0.5s;
+        border: 1px solid #fff;
+    }
+    &_bottom_button:active {
+        border: solid red;
     }
 }

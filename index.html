@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icons/logo.svg" type="image/svg">
     <title>Waxom</title>
 </head>
 
@@ -64,10 +65,10 @@
                     </li>
                 </ul>
             </nav>
-            <div class="header_top_cs">
-                <a href="#"><img src="img/icons/cart.svg" alt="" class="header_top_cs_cart" height="24"></a>
-                <a href="#"><img src="img/icons/search.svg" alt="" class="header_top_cs_search" height="24"></a>
-            </div>
+            <form class="header_top_cs" action="GET">
+                <a href="#" class="header_top_cs_cart"></a>
+                <input type="search" class="header_top_cs_searche">
+            </form>
         </div> <!-- header_top -->
 
         <div class="header_slider">
@@ -128,7 +129,7 @@
                         imperdiet doming id quod mazim.</p>
                 </li>
             </ul>
-            <div class="services_content content_container">
+            <div class="services_content">
                 <div class="content_container">
                     <h2 class="services_content_title">Waxom is Realization of your Ideas.</h2>
                     <p class="services_content_text">Investigationes demonstraverunt lectores legere me lius quod ii
@@ -150,21 +151,295 @@
                     </li>
                 </ul>
             </div>
-            <div class="services_bottom content_container">
-                <div class="wraper">
-                    <h2 class="services_bottom_title">
-                        <span class="services_bottom_title_waxom">Waxom&nbsp;</span>Multipurpose WordPress Theme
-                    </h2>
-                    <p class="services_bottom_text">Don't Forget to Rate the Template. Thanks so much!</p>
+            <aside class="services_bottom">
+                <div class="services_bottom_container content_container">
+                    <div class="services_bottom_wraper">
+                        <h2 class="services_bottom_title">
+                            <span class="services_bottom_title_waxom">Waxom&nbsp;</span>Multipurpose WordPress Theme
+                        </h2>
+                        <p class="services_bottom_text">Don't Forget to Rate the Template. Thanks so much!</p>
+                    </div>
+                    <button class="services_bottom_btn">Purchase Now</button>
                 </div>
-                <button class="services_bottom_btn">Purchase Now</button>
-            </div>
+            </aside>
         </section><!-- services -->
 
+        <section class="projects content_container">
+            <h2 class="projects_title">Our Latest Projects.</h2>
+            <p class="projects_text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+            <ul class="projects_btn_list">
+                <li class="projects_btn_list_item">
+                    <button class="projects_btn_list_item_button">All</button>
+                </li>
+                <li class="projects_btn_list_item">
+                    <button class="projects_btn_list_item_button">Web Design</button>
+                </li>
+                <li class="projects_btn_list_item">
+                    <button class="projects_btn_list_item_button">Mobile App</button>
+                </li>
+                <li class="projects_btn_list_item">
+                    <button class="projects_btn_list_item_button">Illustration</button>
+                </li>
+                <li class="projects_btn_list_item">
+                    <button class="projects_btn_list_item_button">Photography</button>
+                </li>
+            </ul>
+            <ul class="projects_list">
+                <li class="projects_list_item">
+                    <img src="img/projects/projects_photo_0.jpg" alt="Photography nature" class="projects_list_item_img"
+                        width="370" height="240">
+                    <div class="projects_list_item_wrapper">
+                        <h3 class="projects_list_item_title">Claritas Etiam Processus</h3>
+                        <p class="projects_list_item_text">Photography, Nature</p>
+                    </div>
+                </li>
+                <li class="projects_list_item">
+                    <img src="img/projects/projects_photo_1.jpg" alt="Graphic Design" class="projects_list_item_img"
+                        width="370" height="240">
+                    <h3 class="projects_list_item_title">Quam Nutamus Farum</h3>
+                    <p class="projects_list_item_text">Graphic Design, Mock-Up</p>
+                </li>
+                <li class="projects_list_item">
+                    <img src="img/projects/projects_photo_2.jpg" alt="Photography Holiday"
+                        class="projects_list_item_img" width="370" height="240">
+                    <h3 class="projects_list_item_title">Usus Legentis Videntur</h3>
+                    <p class="projects_list_item_text">Photography, Holiday</p>
+                </li>
+                <li class="projects_list_item">
+                    <img src="img/projects/projects_photo_3.jpg" alt="Photography nature" class="projects_list_item_img"
+                        width="370" height="240">
+                    <h3 class="projects_list_item_title">Claritas Etiam Processus</h3>
+                    <p class="projects_list_item_text">Photography, Nature</p>
+                </li>
+                <li class="projects_list_item">
+                    <img src="img/projects/projects_photo_4.jpg" alt="Graphic Design" class="projects_list_item_img"
+                        width="370" height="240">
+                    <h3 class="projects_list_item_title">Quam Nutamus Farum</h3>
+                    <p class="projects_list_item_text">Graphic Design, Mock-Up</p>
+                </li>
+                <li class="projects_list_item">
+                    <img src="img/projects/projects_photo_5.jpg" alt="Photography, Holiday"
+                        class="projects_list_item_img" width="370" height="240">
+                    <h3 class="projects_list_item_title">Usus Legentis Videntur</h3>
+                    <p class="projects_list_item_text">Photography, Holiday</p>
+                </li>
+            </ul>
+            <button class="projects_bottom_button">load more</button>
+        </section><!-- projects -->
+
+        <section class="presentation">
+            <button class="presentation_button"></button>
+            <h3 class="presentation_title">Waxom Video Presentation</h3>
+            <p class="presentation_text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius,
+                qui sequitur mutationem consuetudium.</p>
+            <span class="presentation_time">03:26</span>
+        </section><!-- presentation -->
+
+        <section class="mobile_devices">
+            <h2 class="mobile_devices_title">Excellent for Mobile Devices.</h2>
+            <p class="mobile_devices_text">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me
+                lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant
+                sollemnes in futurum.</p>
+            <ul class="mobile_devices_list">
+                <li class="mobile_devices_list_item">Nam liber tempor cum soluta nobis eleifend option;</li>
+                <li class="mobile_devices_list_item">Option congue nihil imperdiet doming id quod mazim placerat facer;
+                </li>
+                <li class="mobile_devices_list_item">Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+                <li class="mobile_devices_list_item">Investigationes demonstraverunt lectores</li>
+            </ul>
+        </section><!-- mobile_devices -->
+
+        <aside class="counters">
+            <ul class="counters_list">
+                <li class="counters_list_item">
+                    <img src="" alt="" class="counters_list_item_img">
+                    <h3 class="counters_list_item_title">3587</h3>
+                    <p class="counters_list_item_text">Satisfied Clients</p>
+                </li>
+                <li class="counters_list_item">
+                    <img src="" alt="" class="counters_list_item_img">
+                    <h3 class="counters_list_item_title">207</h3>
+                    <p class="counters_list_item_text">Cups of coffee</p>
+                </li>
+                <li class="counters_list_item">
+                    <img src="" alt="" class="counters_list_item_img">
+                    <h3 class="counters_list_item_title">2500</h3>
+                    <p class="counters_list_item_text">Blog posts</p>
+                </li>
+                <li class="counters_list_item">
+                    <img src="" alt="" class="counters_list_item_img">
+                    <h3 class="counters_list_item_title">873</h3>
+                    <p class="counters_list_item_text">Likes</p>
+                </li>
+                <li class="counters_list_item">
+                    <img src="" alt="" class="counters_list_item_img">
+                    <h3 class="counters_list_item_title">900</h3>
+                    <p class="counters_list_item_text">We launched</p>
+                </li>
+            </ul>
+        </aside><!-- counters -->
+
+        <section class="posts">
+            <h2 class="posts_title">Recent Posts.</h2>
+            <p class="posts_text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+            <ul class="posts_list">
+                <li class="posts_list_item">
+                    <img src="" alt="" class="posts_list_item_img">
+                    <div class="posts_list_item_date">
+                        <div class="posts_list_item_date_day">30</div>
+                        <div class="posts_list_item_date_month">Sep.</div>
+                    </div>
+                    <h3 class="posts_list_item_title">Lorem ipsum dolor sit amet</h3>
+                    <p class="posts_list_item_text">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                        consuetudium.</p>
+                    <button class="posts_list_item_button">Read More</button>
+                </li>
+                <li class="posts_list_item"><img src="" alt="" class="posts_list_item_img">
+                    <div class="posts_list_item_date">
+                        <div class="posts_list_item_date_day">30</div>
+                        <div class="posts_list_item_date_month">Sep.</div>
+                    </div>
+                    <h3 class="posts_list_item_title">Lorem ipsum dolor sit amet</h3>
+                    <p class="posts_list_item_text">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                        consuetudium.</p>
+                    <button class="posts_list_item_button">Read More</button>
+                </li>
+                <li class="posts_list_item"><img src="" alt="" class="posts_list_item_img">
+                    <div class="posts_list_item_date">
+                        <div class="posts_list_item_date_day">30</div>
+                        <div class="posts_list_item_date_month">Sep.</div>
+                    </div>
+                    <h3 class="posts_list_item_title">Lorem ipsum dolor sit amet</h3>
+                    <p class="posts_list_item_text">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                        consuetudium.</p>
+                    <button class="posts_list_item_button">Read More</button>
+                </li>
+            </ul>
+            <div class="posts_slider">
+                <button class="posts_slider_btn_left">&lt;</button>
+                <button class="posts_slider_btn_right">&gt;</button>
+            </div>
+        </section><!-- posts -->
+
+        <section class="partners">
+            <ul class="partners_list">
+                <li class="partners_list_item">
+                    <a href="" class="partners_list_item_link">
+                        <img src="" alt="" class="partners_list_item_link_img">
+                    </a>
+                </li>
+                <li class="partners_list_item"><a href="" class="partners_list_item_link"><img src="" alt=""
+                            class="partners_list_item_link_img"></a></li>
+                <li class="partners_list_item"><a href="" class="partners_list_item_link"><img src="" alt=""
+                            class="partners_list_item_link_img"></a></li>
+                <li class="partners_list_item"><a href="" class="partners_list_item_link"><img src="" alt=""
+                            class="partners_list_item_link_img"></a></li>
+            </ul>
+        </section><!-- partners -->
     </main>
 
-    <footer class="footer container content_container">
-
+    <footer class="footer container">
+        <div class="footer_top">
+            <div class="footer_about">
+                <div class="footer_about_logo">
+                    <img src="" alt="" class="footer_about_logo_img">
+                    <h2 class="footer_about_logo_title">Waxom</h2>
+                </div>
+                <p class="footer_about_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci suscipit lobortis claritatem.</p>
+                <a href="" class="footer_about_link">Read More</a>
+            </div>
+            <div class="footer_posts">
+                <h2 class="footer_posts_title">Recent Posts</h2>
+                <ul class="footer_posts_list">
+                    <li class="footer_posts_list_item">
+                        <span class="footer_posts_list_item_date">September 08, 2015</span>
+                        <p class="footer_posts_list_item_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                        </p>
+                    </li>
+                    <li class="footer_posts_list_item">
+                        <span class="footer_posts_list_item_date">September 08, 2015</span>
+                        <p class="footer_posts_list_item_text">Diam nonummy nibh euismod tincidunt ut laoreet dolore
+                            magna</p>
+                    </li>
+                    <li class="footer_posts_list_item">
+                        <span class="footer_posts_list_item_date">September 08, 2015</span>
+                        <p class="footer_posts_list_item_text">Claritas est etiam processus dynamicus, qui sequitur
+                            mutationem per seacula quarta decima</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_twitter">
+                <h2 class="footer_twitter_title">Our Twitter</h2>
+                <ul class="footer_twitter_list">
+                    <li class="footer_twitter_list_item">
+                        <p class="footer_twitter_list_item_text"><span
+                                class="footer_twitter_list_item_text_hash">@waxom</span> Cum soluta nobis eleifend
+                            option congue nihil
+                            imperdiet doming</p>
+                        <span class="footer_twitter_list_item_time">3 mins ago</span>
+                    </li>
+                    <li class="footer_twitter_list_item">
+                        <p class="footer_twitter_list_item_text">Mirum est <span
+                                class="footer_twitter_list_item_text_hash">#envato</span> notare quam littera gothica,
+                            quam
+                            nunc putamus parum anteposuerit litterarum</p>
+                        <span class="footer_twitter_list_item_time">5 hours ago</span>
+                    </li>
+                    <li class="footer_twitter_list_item">
+                        <p class="footer_twitter_list_item_text">Soluta nobis option <span
+                                class="footer_twitter_list_item_text_link">bit.ly/1Hniso7</span></p>
+                        <span class="footer_twitter_list_item_time">20 days ago</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_widgets">
+                <h2 class="footer_widgets_title">Dribbble Widget</h2>
+                <ul class="footer_widgets_list">
+                    <li class="footer_widgets_list_item">
+                        <a href="" class="footer_widgets_list_item_link">
+                            <img src="" alt="" class="footer_widgets_list_item_img">
+                        </a>
+                    </li>
+                    <li class="footer_widgets_list_item">
+                        <a href="" class="footer_widgets_list_item_link">
+                            <img src="" alt="" class="footer_widgets_list_item_img">
+                        </a>
+                    </li>
+                    <li class="footer_widgets_list_item">
+                        <a href="" class="footer_widgets_list_item_link">
+                            <img src="" alt="" class="footer_widgets_list_item_img">
+                        </a>
+                    </li>
+                    <li class="footer_widgets_list_item">
+                        <a href="" class="footer_widgets_list_item_link">
+                            <img src="" alt="" class="footer_widgets_list_item_img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <ul class="footer_copyright_list">
+                <li class="footer_copyright_list_item">Copyright © 2015 <span
+                        claas="footer_copyright_list_item-name">Waxom</span>
+                </li>
+                <li class="footer_copyright_list_item">Privacy Policy</li>
+                <li class="footer_copyright_list_item">FAQ</li>
+                <li class="footer_copyright_list_item">Support</li>
+            </ul>
+            <ul class="footer_copyright_by_list">
+                <li class="footer_copyright_by_list_item"> Designed by <span
+                        claas="footer_copyright_by_list_item-name">ThemeFire</span></li>
+                <li class="footer_copyright_by_list_item">Only on <span
+                        claas="footer_copyright_by_list_item-name">Envato
+                        Market</span></li>
+            </ul>
+        </div>
     </footer>
 
 </body>
