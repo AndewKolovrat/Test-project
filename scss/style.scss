@@ -433,6 +433,24 @@ body {
                 color: #d1d1d1;
             }
             margin-bottom: 30px;
+            &_button-link, &_button-view {
+                width: 25px;
+                height: 25px;
+                display: none;
+                background-color: transparent;
+                position: absolute;
+                top: 110px;
+                color: white;
+                &_ico {
+                    fill: #fff;
+                }
+            }
+            &_button-link {
+                left: 150px;
+            }
+            &_button-view {
+                right: 150px;
+            }
         }
         &_item:hover{
             background-color: #362f2d;
@@ -442,6 +460,14 @@ body {
         }  
         &_item:hover &_item_img {
             filter: brightness(30%);
+        }
+        &_item:hover &_item_button-link, 
+            &_item:hover &_item_button-view {
+            display: block;
+        }
+        &_item:hover &_item_button-link:hover>svg,
+         &_item:hover &_item_button-view:hover>svg {
+            fill: #362f2d;
         }
     }
     &_bottom_button {
@@ -464,4 +490,70 @@ body {
     &_bottom_button:active {
         border: solid red;
     }
+}
+/********************************************************************/
+.presentation {
+    position: relative;
+    &_wrapper {
+        padding: 210px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(17,17,17,0.5);
+        text-align: center;
+        color: #ffffff;
+        &_button {
+            z-index: 1;
+            width: 100px;
+            height: 100px;
+            background-color: transparent;
+            margin-bottom: 45px;
+            border-radius: 50%;
+            opacity: 0.8;
+            &_icon {
+                fill: #fff;
+            }
+        }
+        &_button:hover, &_button:focus {
+            opacity: 1;
+            background-color: rgba(0,0,0,0.2);
+        }
+        &_button:active {
+            opacity: 1;
+            border: solid white;
+        }
+        &_title {
+            z-index: 1;
+            font-family: Raleway;
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        &_text {
+            z-index: 1;
+            font-family: Montserrat;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 300;
+            margin-bottom: 40px;
+            max-width: 555px;
+        }
+        &_time {
+            z-index: 1;
+            font-family: Montserrat;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #c7b299;
+        }
+    }
+    &_video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    margin-bottom: 80px;
 }
