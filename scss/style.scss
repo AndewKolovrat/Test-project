@@ -555,5 +555,15 @@ body {
         height: 100%;
         object-fit: cover;
     }
-    margin-bottom: 80px;
+}
+/********************************************************************/
+.mobile_devices {
+    padding: 180px;
+    background-color: #fbfaf8;
+    &_container {
+        background-image: url('../img/bg_mobile.png');
+        background-repeat: no-repeat;
+        background-size: 425px auto;
+        background-position: left top;
+    }
 }

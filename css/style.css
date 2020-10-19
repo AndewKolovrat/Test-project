@@ -695,7 +695,6 @@ body {
 /********************************************************************/
 .presentation {
   position: relative;
-  margin-bottom: 80px;
 }
 
 .presentation_wrapper {
@@ -774,5 +773,18 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/********************************************************************/
+.mobile_devices {
+  padding: 180px;
+  background-color: #fbfaf8;
+}
+
+.mobile_devices_container {
+  background-image: url("../img/bg_mobile.png");
+  background-repeat: no-repeat;
+  background-size: 425px auto;
+  background-position: left top;
 }
 /*# sourceMappingURL=style.css.map */
