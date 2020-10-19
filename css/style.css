@@ -1123,6 +1123,23 @@ body {
   background-color: #191919;
 }
 
+.footer_top {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer_top_about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
 .footer_copyright {
   background-color: #111111;
   padding: 55px 0;

@@ -828,6 +828,15 @@ body {
 /********************************************************************/
 .footer {
     background-color: #191919;
+    &_top {
+        padding: 80px 0;
+        display: flex;
+        justify-content: space-between;
+        &_about {
+            display: flex;
+            margin-bottom: 30px;
+        }
+    }
     &_copyright {
         background-color: #111111;
         padding: 55px 0;
