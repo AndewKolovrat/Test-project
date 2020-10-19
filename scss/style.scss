@@ -16,6 +16,15 @@ ul li{list-style:none;}
 img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 /********************************************************************/
+input[type=radio] {
+	display: none;
+}
+label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+}
+/********************************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 body {
@@ -179,21 +188,26 @@ body {
         }
     }
     &_slides {
-        &_slide {
+        &_slide_label::before {
+            content: '';
+            display: inline-block;
             width: 15px;
             height: 15px;
             margin-right: 10px;
             opacity: .5;
-            background-color: #fff;
+            background-color: transparent;
             border:  2px solid #fff;
-            border-radius: 50%;
+            border-radius: 100%;
         }
-        &_slide:last-child {
+        &_slide_label:last-child::before {
             margin-right: 0;
         }
-        &_slide:hover {
+        &_slide_label:hover::before {
             transition: .7s;
             opacity: 1;
+        }
+        &_slide:checked + &_slide_label::before {
+            background-color: #fff;
         }
     }
 }
