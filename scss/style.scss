@@ -671,3 +671,148 @@ body {
         }
     }
 }
+/********************************************************************/
+.posts {
+    background-color: #fff;
+    padding: 80px 0;
+    &_title {
+        font-family: Raleway;
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 600;
+        color: #555555;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &_text {
+        font-family: Montserrat;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 300;
+        color: #8c8c8c;
+        width: 760px;
+        margin: 0 auto 40px;
+    }
+    &_list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &_item {
+            position: relative;
+            width: 370px;
+            border: 1px solid #f8f8f8;
+            &_img {
+                margin-bottom: 30px;
+            }
+            &_title {
+                font-family: Raleway;
+                font-size: 20px;
+                line-height: 1.2;
+                font-weight: 500;
+                color: #555555;
+                margin: 0 30px 20px;
+            }
+            &_text {
+                font-family: Montserrat;
+                font-size: 14px;
+                line-height: 22px;
+                font-weight: 300;
+                color: #8c8c8c;
+                width: 300px;
+                margin: 0 30px 30px;
+            }
+            &_button {
+                font-family: Montserrat;
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 300;
+                color: #c7b299;
+                margin: 0 0 35px 30px;
+                background-color: transparent;
+            }
+            &_button:hover {
+                opacity: .8;
+            }
+            &_button::after {
+                content: '';
+                display: inline-block;
+                margin-left: 10px;
+                width: 5px;
+                height: 10px;
+                background-image: url('../img/icons/posts_arrow.svg');
+            }
+            &_date {
+                width: 50px;
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                &_day,
+                 &_month {
+                     display: inline-block;
+                    width: 100%;
+                    color: #ffffff;
+                    text-align: center;
+                    vertical-align: middle;
+                    line-height: 20px;
+                }
+                &_day {
+                    height: 35px;
+                    background-color: #363636;
+                    border-radius: 3px 3px 0px 0px;
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    line-height: 20px;
+                    font-weight: 300;
+                    padding: 10px;
+                }
+                &_month {
+                    height: 25px;
+                    background-color: #252525;
+                    border-radius: 0px 0px 3px 3px;
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+            margin-bottom: 40px;
+        }
+        &_item:hover {
+            background-color: #362f2d;
+        }
+        &_item:hover &_item_img {
+            filter: brightness(30%);
+        }
+        &_item:hover &_item_title {
+            color: #c7b299;
+        }
+        &_item:hover &_item_text {
+            color: #fff;
+        }
+        &_item:hover &_item_date_day {
+            background-color: #c7b299;
+        }
+        &_item:hover &_item_date_month {
+            background-color: #a48d72;
+        }
+    }
+    &_slider {
+        text-align: center;
+        margin-bottom: 80px;
+        &_btn {
+            width: 22px;
+            height: 22px;
+            color: #d1d1d1;
+            background-color: transparent;
+            border: 1px solid;
+            border-radius: 50%;
+        }
+        &_btn:first-child {
+            margin-right: 10px;
+        }
+        &_btn:hover {
+            color: #c7b299;
+        }
+    }
+}
+/********************************************************************/
