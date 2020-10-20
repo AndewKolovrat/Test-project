@@ -340,7 +340,7 @@ body {
         &_item::after {
             content:"";
             width: 70px;
-            border: 3px solid;
+            border-bottom: 3px solid;
             border-color: inherit;
         }
         &_item:hover {
@@ -664,7 +664,7 @@ body {
 }
 /********************************************************************/
 .mobile_devices {
-    padding: 80px 80px 0 80px;
+    padding-top: 80px;
     background-color: #fbfaf8;
     &_container {
         min-height: 695px;
