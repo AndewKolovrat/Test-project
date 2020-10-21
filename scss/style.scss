@@ -104,6 +104,8 @@ body {
     padding: 40px 30px 40px;
     background-image: url(../img/bg_photo.jpg);
     background-color: rgba(17,17,17,0.7);
+    background-repeat: no-repeat;
+    background-size: cover;
 
     display: flex;
     flex-direction: column;
@@ -115,8 +117,10 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 30px;
 
         &_logo {
+            flex: 0 0 0;
             display: flex;
             align-items: center;
             &_title {
@@ -128,12 +132,15 @@ body {
                 letter-spacing: -0.04em;
                 color: #ffffff;
             }
+            margin-right: 30px;
         }
         &_nav{
-
+            flex: auto 1 auto;
             &_list {
                 display: flex;
-
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
                 &_item {
                     margin-right: 30px;
                     &_link {
@@ -147,6 +154,9 @@ body {
 
                     &_link:hover, 
                      &_link:focus {
+                        color: #c7b299;
+                    }
+                    .header_nav_selected {
                         color: #c7b299;
                     }
 
@@ -163,6 +173,7 @@ body {
         &_cs {
             display: flex;
             justify-items: center;
+            margin-left: 30px;
 
             &_searche,
              &_cart {
@@ -211,6 +222,7 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin-bottom: 30px;
         
         &_arrow {
             width: 40px;
@@ -485,6 +497,10 @@ body {
                 border-radius: 3px;
             }
             &_button:focus, &_button:hover {
+                background-color: #998675;
+                color: #ffffff;
+            }
+            .projects_button-selected{
                 background-color: #998675;
                 color: #ffffff;
             }
