@@ -1,6 +1,7 @@
 var video = document.getElementById('presentation_video'),
     playBtn = document.getElementById('presentation_button'),
     time = document.getElementById('presentation_Time'),
+    presentation = document.getElementById('presentation_text'),
     burger = document.getElementById('burger'),
     menu = document.getElementById('nav');
 
@@ -25,16 +26,16 @@ function closeMenu() {
 playBtn.addEventListener('click', function () {
     if (video.paused) {
         video.play();
-        playBtn.classList.add('visually-hidden');
+        presentation.classList.add('hide');
     } else {
         video.pause();
-        playBtn.classList.remove('visually-hidden');
+        presentation.classList.remove('hide');
     }
 }, false);
 
 video.addEventListener('ended', function () {
     video.currentTime = 0;
-    playBtn.classList.remove('visually-hidden');
+    presentation.classList.remove('hide');
 }, false);
 
 video.addEventListener('click', function () {

@@ -112,6 +112,10 @@ body {
   clip: rect(0 0 0 0);
 }
 
+.hide {
+  visibility: hidden;
+}
+
 .burger {
   display: none;
   color: lightgray;
@@ -830,6 +834,14 @@ body {
   position: relative;
 }
 
+.presentation_spoiler {
+  cursor: pointer;
+}
+
+.presentation_spoiler_caption {
+  display: none;
+}
+
 .presentation_wrapper {
   padding: 210px;
   z-index: 1;
@@ -891,13 +903,16 @@ body {
   max-width: 555px;
 }
 
-.presentation_wrapper_time {
+.presentation_time {
   z-index: 1;
   font-family: "Montserrat",sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: #c7b299;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
 }
 
 .presentation_video {
@@ -1544,7 +1559,6 @@ body {
   .content_container {
     max-width: 605px;
   }
-  .presentation,
   .services_content,
   .purchase,
   .counters,
@@ -1576,6 +1590,16 @@ body {
   }
   .fixed-page {
     overflow: hidden;
+  }
+  .presentation_spoiler_caption {
+    display: block;
+    text-align: center;
+  }
+  .presentation_wrapper {
+    padding: 10px;
+  }
+  .presentation_wrapper_button {
+    margin-bottom: 0;
   }
   .mobile_devices {
     padding-top: 30px;
