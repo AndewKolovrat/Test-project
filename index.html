@@ -44,15 +44,15 @@
 
     <header class="header">
 
-        <div class="header_head content_container">
+        <div class="header_head">
             <div class="header_head_logo">
                 <img src="img/icons/logo.svg" alt="logo" class="header_head_logo_img" width="65" height="55">
                 <span class="header_head_logo_title">Waxom</span>
             </div>
-            <nav class="header_head_nav">
-                <ul class="header_head_nav_list">
+            <nav class="header_head_nav" id="nav">
+                <ul class="header_head_nav_list" id="nav_list">
                     <li class="header_head_nav_list_item">
-                        <a href="#" class="header_head_nav_list_item_link">Home</a>
+                        <a href="#" class="header_nav_selected header_head_nav_list_item_link">Home</a>
                     </li>
                     <li class="header_head_nav_list_item">
                         <a href="#" class="header_head_nav_list_item_link">About Us</a>
@@ -80,6 +80,9 @@
             <div class="header_head_cs">
                 <a href="#" class="header_head_cs_cart"></a>
                 <input type="search" class="header_head_cs_searche">
+            </div>
+            <div class="burger" id="burger">
+                <span class="burger_item"></span>
             </div>
         </div> <!-- header_head -->
 
@@ -195,7 +198,7 @@
                     <button class="projects_btn_list_item_button">All</button>
                 </li>
                 <li class="projects_btn_list_item">
-                    <button class="projects_btn_list_item_button">Web Design</button>
+                    <button class="projects_btn_list_item_button projects_button-selected">Web Design</button>
                 </li>
                 <li class="projects_btn_list_item">
                     <button class="projects_btn_list_item_button">Mobile App</button>
@@ -321,27 +324,30 @@
         </section><!-- projects -->
 
         <section class="presentation">
-            <h2 class="visually-hidden">Waxom Video Presentation</h2>
-            <video class="presentation_video" id="presentation_video"
-                src="https://storage.coverr.co/videos/IVBW7jVjkQhNeznVYPnH9uD9Wj3Pyt17?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTkwMTcyNjY5fQ.1kjgP-D14QO1sowdor9oXyzMshES9OUnqmx6vVM0d54">
-            </video>
-            <div class="presentation_wrapper">
-                <button class="presentation_wrapper_button" id="presentation_button">
-                    <svg height="70px" width="70px" class="presentation_wrapper_button_icon">
-                        <use xlink:href="#play" />
-                    </svg>
-                </button>
-                <h3 class="presentation_wrapper_title">Waxom Video Presentation</h3>
-                <p class="presentation_wrapper_text">Investigationes demonstraverunt lectores legere me lius quod ii
-                    legunt
-                    saepius,
-                    qui sequitur mutationem consuetudium.</p>
-                <span class="presentation_wrapper_time" id="presentation_Time">00:00</span>
-            </div>
+            <details class="presentation_spoiler" open>
+                <summary class="presentation_spoiler_caption">Waxom Video Presentation</summary>
+                <h2 class="visually-hidden">Waxom Video Presentation</h2>
+                <video class="presentation_video" id="presentation_video"
+                    src="https://storage.coverr.co/videos/IVBW7jVjkQhNeznVYPnH9uD9Wj3Pyt17?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTkwMTcyNjY5fQ.1kjgP-D14QO1sowdor9oXyzMshES9OUnqmx6vVM0d54">
+                </video>
+                <div class="presentation_wrapper" id="presentation_text">
+                    <button class="presentation_wrapper_button" id="presentation_button">
+                        <svg height="70px" width="70px" class="presentation_wrapper_button_icon">
+                            <use xlink:href="#play" />
+                        </svg>
+                    </button>
+                    <h3 class="presentation_wrapper_title">Waxom Video Presentation</h3>
+                    <p class="presentation_wrapper_text">Investigationes demonstraverunt lectores legere me lius quod ii
+                        legunt
+                        saepius,
+                        qui sequitur mutationem consuetudium.</p>
+
+                </div>
+                <span class="presentation_time" id="presentation_Time">00:00</span>
+            </details>
         </section><!-- presentation -->
 
         <section class="mobile_devices">
-
             <div class="mobile_devices_container content_container">
                 <div class="wraper">
                     <h2 class="mobile_devices_title">Excellent for Mobile Devices.</h2>
@@ -483,7 +489,7 @@
     <footer class="footer">
         <div class="footer_top content_container">
 
-            <div class="footer_about">
+            <div class="footer_about footer_chunk">
                 <img src="img/icons/logo.svg" alt="logo" class="footer_about_img" width="65" height="55">
                 <span class="footer_about_title">Waxom</span>
                 <p class="footer_about_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
@@ -493,7 +499,7 @@
             </div>
             <!--footer_about-->
 
-            <div class="footer_posts">
+            <div class="footer_posts footer_chunk">
                 <h2 class="footer_posts_title">Recent Posts</h2>
                 <ul class="footer_posts_list">
                     <li class="footer_posts_list_item">
@@ -515,7 +521,7 @@
             </div>
             <!--footer_posts-->
 
-            <div class="footer_twitter">
+            <div class="footer_twitter footer_chunk">
                 <h2 class="footer_twitter_title">Our Twitter</h2>
                 <ul class="footer_twitter_list">
                     <li class="footer_twitter_list_item">
@@ -540,7 +546,7 @@
                 </ul>
             </div>
             <!--footer_twitter-->
-            <div class="footer_widgets">
+            <div class="footer_widgets footer_chunk">
                 <h2 class="footer_widgets_title">Dribbble Widget</h2>
                 <ul class="footer_widgets_list">
                     <li class="footer_widgets_list_item">
@@ -602,7 +608,7 @@
         <!--footer_copyright-->
     </footer>
 
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 
