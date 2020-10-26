@@ -1012,15 +1012,12 @@ body {
                     width: 100%;
                     height: auto;
                 }
+                opacity: .7;
             }
-            &_link:hover &_link_img{
-                border: solid #c7b299;
-            }
-            &_link:focus &_link_img{
-                border: solid #c7b299;
-            }
-            &_link:active &_link_img{
-                border: solid #fff;
+            &_link:hover,
+             &_link:focus,
+             &_link:active {
+                opacity: 1;
             }
         }
     }

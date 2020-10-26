@@ -1258,21 +1258,17 @@ body {
   max-width: 20%;
 }
 
+.partners_list_item_link {
+  opacity: .7;
+}
+
 .partners_list_item_link_img {
   width: 100%;
   height: auto;
 }
 
-.partners_list_item_link:hover .partners_list_item_link_img {
-  border: solid #c7b299;
-}
-
-.partners_list_item_link:focus .partners_list_item_link_img {
-  border: solid #c7b299;
-}
-
-.partners_list_item_link:active .partners_list_item_link_img {
-  border: solid #fff;
+.partners_list_item_link:hover, .partners_list_item_link:focus, .partners_list_item_link:active {
+  opacity: 1;
 }
 
 /********************************************************************/
