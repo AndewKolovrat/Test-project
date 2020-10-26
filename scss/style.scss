@@ -823,9 +823,12 @@ body {
     &_list {
         display: flex;
         justify-content: space-around;
-        flex-wrap: wrap;
+        // for asnimation wrap is false.
+        //flex-wrap: wrap;
+        overflow: hidden;
         &_item {
             cursor: pointer;
+            animation: 10s linear 2s infinite normal swing;
             transition: all ease-in-out 1s;
             margin-bottom: 30px;
             display: flex;
@@ -859,8 +862,17 @@ body {
             border-bottom: 2px solid #fff;
         }
         &_item:hover {
-            transform: scale(1.5);
+            transform: scale(1.2);
         }
+    }
+}
+@keyframes swing {
+    from {
+        margin-right: -200%;
+    }
+    to {
+        margin-right: 0;
+        margin-left: -200%;
     }
 }
 /********************************************************************/

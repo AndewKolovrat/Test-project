@@ -1031,12 +1031,13 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .counters_list_item {
   cursor: pointer;
+  -webkit-animation: 10s linear 2s infinite normal swing;
+          animation: 10s linear 2s infinite normal swing;
   -webkit-transition: all ease-in-out 1s;
   transition: all ease-in-out 1s;
   margin-bottom: 30px;
@@ -1083,8 +1084,28 @@ body {
 }
 
 .counters_list_item:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@-webkit-keyframes swing {
+  from {
+    margin-right: -200%;
+  }
+  to {
+    margin-right: 0;
+    margin-left: -200%;
+  }
+}
+
+@keyframes swing {
+  from {
+    margin-right: -200%;
+  }
+  to {
+    margin-right: 0;
+    margin-left: -200%;
+  }
 }
 
 /********************************************************************/
