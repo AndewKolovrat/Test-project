@@ -783,6 +783,9 @@ body {
         line-height: 32px;
         font-weight: 300;
         color: #8c8c8c;
+        &_item {
+            cursor: pointer;
+        }
         &_item::before {
             content: '>';
             display: inline-block;
@@ -797,6 +800,10 @@ body {
             vertical-align: middle;
             text-align: center;
             border-radius: 50%;
+            transition: transform 1s ease-out;
+        }
+        &_item:hover::before {
+            transform: rotate(360deg);
         }
     }
 }
@@ -810,6 +817,8 @@ body {
         justify-content: space-around;
         flex-wrap: wrap;
         &_item {
+            cursor: pointer;
+            transition: all ease-in-out 1s;
             margin-bottom: 30px;
             display: flex;
             flex-direction: column;
@@ -840,6 +849,9 @@ body {
             width: 30px;
             display: inline-block;
             border-bottom: 2px solid #fff;
+        }
+        &_item:hover {
+            transform: scale(1.5);
         }
     }
 }
@@ -1006,6 +1018,8 @@ body {
         justify-content: space-around;
         align-items: center;
         &_item {
+            cursor: pointer;
+            transition: all ease-in-out 1s;
             max-width: 20%;
             &_link {
                 &_img {
@@ -1014,11 +1028,16 @@ body {
                 }
                 opacity: .7;
             }
-            &_link:hover,
+            &_link:hover {
+                opacity: 1;
+            }
              &_link:focus,
              &_link:active {
                 opacity: 1;
             }
+        }
+        &_item:hover {
+            transform: scale(1.5);
         }
     }
 }
@@ -1192,6 +1211,7 @@ body {
             display: flex;
             flex-wrap: wrap;
             &_item {
+                cursor: pointer;
                 margin: 0 10px 10px 0;
                 &_link:hover &_link_img {
                     border: 1px solid #c7b299;
