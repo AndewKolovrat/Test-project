@@ -543,6 +543,8 @@ body {
   z-index: 1;
   bottom: 0;
   width: 50%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .services_content_screenlist_item > img {
@@ -565,6 +567,16 @@ body {
 
 .services_content_screenlist_item:nth-child(2) {
   left: 25%;
+}
+
+.services_content_screenlist_item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 5;
+}
+
+.services_content_screenlist_item:not(:nth-child(2)):not(:hover) {
+  z-index: 0;
 }
 
 /********************************************************************/

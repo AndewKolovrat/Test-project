@@ -439,6 +439,7 @@ body {
                 z-index: 1;
                 bottom: 0;
                 width: 50%;
+                transition: all 1s ease-in-out;
             }
             &_item > img {
                 width: 100%;
@@ -456,6 +457,13 @@ body {
             }
             &_item:nth-child(2) {
                 left: 25%;
+            }
+            &_item:hover {
+                transform: scale(1.2);
+                z-index: 5;
+            }
+            &_item:not(:nth-child(2)):not(:hover) {
+                z-index: 0;
             }
         }
     }
