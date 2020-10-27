@@ -439,6 +439,7 @@ body {
                 z-index: 1;
                 bottom: 0;
                 width: 50%;
+                transition: all 1s ease-in-out;
             }
             &_item > img {
                 width: 100%;
@@ -456,6 +457,13 @@ body {
             }
             &_item:nth-child(2) {
                 left: 25%;
+            }
+            &_item:hover {
+                transform: scale(1.2);
+                z-index: 5;
+            }
+            &_item:not(:nth-child(2)):not(:hover) {
+                z-index: 0;
             }
         }
     }
@@ -783,6 +791,9 @@ body {
         line-height: 32px;
         font-weight: 300;
         color: #8c8c8c;
+        &_item {
+            cursor: pointer;
+        }
         &_item::before {
             content: '>';
             display: inline-block;
@@ -797,6 +808,10 @@ body {
             vertical-align: middle;
             text-align: center;
             border-radius: 50%;
+            transition: transform 1s ease-out;
+        }
+        &_item:hover::before {
+            transform: rotate(360deg);
         }
     }
 }
@@ -808,8 +823,13 @@ body {
     &_list {
         display: flex;
         justify-content: space-around;
-        flex-wrap: wrap;
+        // for asnimation wrap is false.
+        //flex-wrap: wrap;
+        overflow: hidden;
         &_item {
+            cursor: pointer;
+            animation: 10s linear 2s infinite normal swing;
+            transition: all ease-in-out 1s;
             margin-bottom: 30px;
             display: flex;
             flex-direction: column;
@@ -841,6 +861,18 @@ body {
             display: inline-block;
             border-bottom: 2px solid #fff;
         }
+        &_item:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+@keyframes swing {
+    from {
+        margin-right: -200%;
+    }
+    to {
+        margin-right: 0;
+        margin-left: -200%;
     }
 }
 /********************************************************************/
@@ -1006,6 +1038,8 @@ body {
         justify-content: space-around;
         align-items: center;
         &_item {
+            cursor: pointer;
+            transition: all ease-in-out 1s;
             max-width: 20%;
             &_link {
                 &_img {
@@ -1014,11 +1048,16 @@ body {
                 }
                 opacity: .7;
             }
-            &_link:hover,
+            &_link:hover {
+                opacity: 1;
+            }
              &_link:focus,
              &_link:active {
                 opacity: 1;
             }
+        }
+        &_item:hover {
+            transform: scale(1.5);
         }
     }
 }
@@ -1192,6 +1231,7 @@ body {
             display: flex;
             flex-wrap: wrap;
             &_item {
+                cursor: pointer;
                 margin: 0 10px 10px 0;
                 &_link:hover &_link_img {
                     border: 1px solid #c7b299;
